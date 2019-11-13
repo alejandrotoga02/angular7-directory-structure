@@ -13,7 +13,7 @@ import { LayoutComponent } from './layout/layout.component';
     LayoutComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     
     // core & shared
     CoreModule,
