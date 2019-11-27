@@ -1,0 +1,19 @@
+<div class="container breadcrumb-wrap">
+  <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a [routerLink]="['/']">Inicio</a></li>
+
+        <ng-container *ngFor="let item of breadcrumb;let last=last;">
+
+          <li  *ngIf=" last; else Element " class="breadcrumb-item active" aria-current="page">{{ item }}</li>
+
+          <ng-template #Element>
+              <li class="breadcrumb-item" > <a [routerLink]="item.href"> {{ item.text }} </a></li> 
+          </ng-template>
+
+        </ng-container>
+        
+      </ol>
+  </nav>
+</div>

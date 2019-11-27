@@ -1,3 +1,60 @@
-<p>
-  footer works!
-</p>
+<div class="contact-btn-wrap">
+  <ul>
+      <li>
+          <a href="">
+              <i class="fas fa-phone"></i>
+          </a>
+      </li>
+      <li>
+          <a [routerLink]="['/', 'contacto' ]">
+              <i class="fas fa-envelope"></i>
+          </a>
+      </li>
+      <li>
+          <a href="">
+              <i class="fas fa-comment-alt"></i>
+          </a>
+      </li>
+      <li>
+          <a href="">
+              <i class="fab fa-whatsapp"></i>
+          </a>
+      </li>
+  </ul>
+</div>
+<div class="fix"></div>
+
+<footer class="footer"><!-- footer -->
+  <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-2">
+              <a href="/" class="logo-wrap">
+                  <img class="footer-img" src="./assets/images/logo-footer.png" alt="Logo">
+              </a>
+          </div>
+          <div class="col-md-3 col-6">
+              <h6>Site</h6>
+              <ul>
+                  <li><a href="">Únete a Nuestro Equipo</a></li>
+                  <li><a [routerLink]="['/', 'aviso-de-privacidad' ]">Aviso de privacidad integral</a></li>
+                  <li><a href="">Términos y condiciones</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 col-6">
+              <h6>Clientes</h6>
+              <ul>
+                  <li><a href="">Consulta tu factura electrónica</a></li>
+                  <li><a href="">Consulta Estado de Cuenta</a></li>
+                  <li><a href="">Formato para designación beneficiario</a></li>
+                  <li><a href="">Titular sustituto y usuarios</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 col-12">
+              <h6>Proveedores</h6>
+              <ul>
+                  <li><a href="">Facturación</a></li>
+              </ul>                       
+          </div>
+      </div>
+  </div>
+</footer><!-- / -->
