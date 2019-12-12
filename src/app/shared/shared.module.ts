@@ -7,18 +7,16 @@ import { RouterModule } from '@angular/router';
 import { CoreModule } from '../core/core.module';
 import { HeaderComponent } from './header';
 import {
-  FooterComponent  
+  FooterComponent
 } from './footer';
-import {  
-  BreadcrumbComponent,
-  LoadingComponent,
-} from './components';
+import { LoadingComponent } from './loading/loading.component';
+import { componentsDeclaration } from './components';
 
 @NgModule({
   declarations: [
+    componentsDeclaration,
     HeaderComponent,
     FooterComponent,
-    BreadcrumbComponent,
     LoadingComponent,
   ],
   imports: [
@@ -27,10 +25,10 @@ import {
     CoreModule,
   ],
   exports: [
+    componentsDeclaration,
     HeaderComponent,
     FooterComponent,
-    BreadcrumbComponent,   
-    CoreModule,    
+    CoreModule,
     LoadingComponent,
   ]
 })

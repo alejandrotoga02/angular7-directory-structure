@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { SiteRoutingModule } from './site-routing.module';
-import { HomeComponent } from './pages/home/home.component';
+
+import { pagesDeclaration } from './pages';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [
+    pagesDeclaration
+  ],
   imports: [
     CommonModule,
     SiteRoutingModule

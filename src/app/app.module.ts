@@ -14,7 +14,7 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    
+
     // core & shared
     CoreModule,
     SharedModule,
