@@ -6,9 +6,10 @@ import {
 import {
   HomeComponent
 } from './pages';
+import { UserResolver } from '@app/core/resolvers';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent, resolve: {  user: UserResolver} }
 ];
 
 @NgModule({
