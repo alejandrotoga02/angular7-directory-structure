@@ -6,7 +6,20 @@ services:
             context: .
             dockerfile: Dockerfile
         tty: true
-        ports:
-            - "4211:80"
+        expose:
+            - "80"
+        environment:
+            - VIRTUAL_HOST=angular-structure.rigidcode.com
+            - VIRTUAL_PORT=80
+            - LETSENCRYPT_HOST=angular-structure.rigidcode.com
+            - LETSENCRYPT_EMAIL=admin@rigicode.com
+        networks:
+            - proxy
         volumes:
             - ./:/app
+
+networks:
+    proxy:
+        external:
+            name: nginx-proxy
+
