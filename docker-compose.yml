@@ -1,0 +1,12 @@
+version: '3'
+services:
+
+    angulardirectory:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        tty: true
+        ports:
+            - "4211:80"
+        volumes:
+            - ./:/app
