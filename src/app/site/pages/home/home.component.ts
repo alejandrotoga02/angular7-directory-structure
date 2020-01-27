@@ -14,13 +14,7 @@ export class HomeComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit() {
-
-    this.route.data.subscribe(
-      ( data ) => {
-        this.data = data.user;
-      }      
-    );
+  ngOnInit() {   
   }
 
 }
